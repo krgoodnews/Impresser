@@ -13,6 +13,7 @@
 		F3498FE321B9346D006E0217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3498FE121B9346D006E0217 /* Main.storyboard */; };
 		F3498FE521B9346F006E0217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3498FE421B9346F006E0217 /* Assets.xcassets */; };
 		F3498FE821B9346F006E0217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3498FE621B9346F006E0217 /* LaunchScreen.storyboard */; };
+		F3498FF021B93829006E0217 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3498FEF21B93829006E0217 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F3498FE421B9346F006E0217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3498FE721B9346F006E0217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3498FE921B9346F006E0217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3498FEF21B93829006E0217 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F3498FDD21B9346D006E0217 /* AppDelegate.swift */,
+				F3498FEF21B93829006E0217 /* MainViewController.swift */,
 				F3498FDF21B9346D006E0217 /* ViewController.swift */,
 				F3498FE121B9346D006E0217 /* Main.storyboard */,
 				F3498FE421B9346F006E0217 /* Assets.xcassets */,
@@ -100,6 +103,7 @@
 				F3498FD721B9346D006E0217 /* Frameworks */,
 				F3498FD821B9346D006E0217 /* Resources */,
 				4858623F2C109ED6D97106E6 /* [CP] Embed Pods Frameworks */,
+				F3E114CB21B93A2100B2550F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,6 +211,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3E114CB21B93A2100B2550F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3498FF021B93829006E0217 /* MainViewController.swift in Sources */,
 				F3498FE021B9346D006E0217 /* ViewController.swift in Sources */,
 				F3498FDE21B9346D006E0217 /* AppDelegate.swift in Sources */,
 			);
