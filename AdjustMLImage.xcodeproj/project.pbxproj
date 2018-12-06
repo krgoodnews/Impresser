@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24CBA9B3D2D80CB78B6CD643 /* Pods_AdjustMLImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35487E989780400B116B12EE /* Pods_AdjustMLImage.framework */; };
 		F3498FDE21B9346D006E0217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3498FDD21B9346D006E0217 /* AppDelegate.swift */; };
 		F3498FE021B9346D006E0217 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3498FDF21B9346D006E0217 /* ViewController.swift */; };
 		F3498FE321B9346D006E0217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3498FE121B9346D006E0217 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35487E989780400B116B12EE /* Pods_AdjustMLImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdjustMLImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D9719BCA0F2307627573B9 /* Pods-AdjustMLImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdjustMLImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdjustMLImage/Pods-AdjustMLImage.debug.xcconfig"; sourceTree = "<group>"; };
+		B5D87F87E13FB7FC39121F7E /* Pods-AdjustMLImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdjustMLImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdjustMLImage/Pods-AdjustMLImage.release.xcconfig"; sourceTree = "<group>"; };
 		F3498FDA21B9346D006E0217 /* AdjustMLImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdjustMLImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3498FDD21B9346D006E0217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3498FDF21B9346D006E0217 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24CBA9B3D2D80CB78B6CD643 /* Pods_AdjustMLImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		446D613523F146CF5323C23C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7D9719BCA0F2307627573B9 /* Pods-AdjustMLImage.debug.xcconfig */,
+				B5D87F87E13FB7FC39121F7E /* Pods-AdjustMLImage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7356DD6D29C4987D55FF9D05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35487E989780400B116B12EE /* Pods_AdjustMLImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F3498FD121B9346D006E0217 = {
 			isa = PBXGroup;
 			children = (
 				F3498FDC21B9346D006E0217 /* AdjustMLImage */,
 				F3498FDB21B9346D006E0217 /* Products */,
+				446D613523F146CF5323C23C /* Pods */,
+				7356DD6D29C4987D55FF9D05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3498FEC21B9346F006E0217 /* Build configuration list for PBXNativeTarget "AdjustMLImage" */;
 			buildPhases = (
+				E18102471CC4937EE2A7817F /* [CP] Check Pods Manifest.lock */,
 				F3498FD621B9346D006E0217 /* Sources */,
 				F3498FD721B9346D006E0217 /* Frameworks */,
 				F3498FD821B9346D006E0217 /* Resources */,
+				4858623F2C109ED6D97106E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4858623F2C109ED6D97106E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AdjustMLImage/Pods-AdjustMLImage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdjustMLImage/Pods-AdjustMLImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E18102471CC4937EE2A7817F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdjustMLImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3498FD621B9346D006E0217 /* Sources */ = {
@@ -280,6 +359,7 @@
 		};
 		F3498FED21B9346F006E0217 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D9719BCA0F2307627573B9 /* Pods-AdjustMLImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +379,7 @@
 		};
 		F3498FEE21B9346F006E0217 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D87F87E13FB7FC39121F7E /* Pods-AdjustMLImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
