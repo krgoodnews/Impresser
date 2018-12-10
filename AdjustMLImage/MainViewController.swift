@@ -39,11 +39,10 @@ class MainViewController: UIViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-
+		print("viewDidAppear")
 		imgView.adjustCircleStyle()
 	}
 	private func setupViews() {
-		title = "임프레셔"
 		view.backgroundColor = .white
 
 		view.addSubviews(originalImgView, imgView, compressorCV)
@@ -56,13 +55,13 @@ class MainViewController: UIViewController {
 		originalImgView.snp.makeConstraints {
 			$0.top.equalTo(view.safeAreaLayoutGuide)
 			$0.centerX.equalToSuperview()
-			$0.size.equalTo(CGSize(width: 240, height: 160))
+			$0.size.equalTo(CGSize(width: 320, height: 213))
 		}
 
 		imgView.snp.makeConstraints {
 			$0.top.equalTo(originalImgView.snp.bottom).offset(12)
 			$0.centerX.equalToSuperview()
-			$0.size.equalTo(CGSize(width: 240, height: 160))
+			$0.size.equalTo(originalImgView)
 		}
 
 		compressorCV.snp.makeConstraints {
