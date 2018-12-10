@@ -14,6 +14,12 @@
 		F3498FE521B9346F006E0217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3498FE421B9346F006E0217 /* Assets.xcassets */; };
 		F3498FE821B9346F006E0217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3498FE621B9346F006E0217 /* LaunchScreen.storyboard */; };
 		F3498FF021B93829006E0217 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3498FEF21B93829006E0217 /* MainViewController.swift */; };
+		F3AEAB4A21BBFC2400CEC711 /* CircleStyleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEAB4921BBFC2400CEC711 /* CircleStyleImageView.swift */; };
+		F3E114D021B949EB00B2550F /* udnie.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3E114CC21B949EA00B2550F /* udnie.mlmodel */; };
+		F3E114D121B949EB00B2550F /* rain_princess.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3E114CD21B949EA00B2550F /* rain_princess.mlmodel */; };
+		F3E114D221B949EB00B2550F /* wave.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3E114CE21B949EB00B2550F /* wave.mlmodel */; };
+		F3E114D321B949EB00B2550F /* la_muse.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3E114CF21B949EB00B2550F /* la_muse.mlmodel */; };
+		F3E114D521B94A6400B2550F /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E114D421B94A6400B2550F /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		F3498FE721B9346F006E0217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3498FE921B9346F006E0217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3498FEF21B93829006E0217 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F3AEAB4921BBFC2400CEC711 /* CircleStyleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleStyleImageView.swift; sourceTree = "<group>"; };
+		F3E114CC21B949EA00B2550F /* udnie.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = udnie.mlmodel; sourceTree = "<group>"; };
+		F3E114CD21B949EA00B2550F /* rain_princess.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = rain_princess.mlmodel; sourceTree = "<group>"; };
+		F3E114CE21B949EB00B2550F /* wave.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wave.mlmodel; sourceTree = "<group>"; };
+		F3E114CF21B949EB00B2550F /* la_muse.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = la_muse.mlmodel; sourceTree = "<group>"; };
+		F3E114D421B94A6400B2550F /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +95,16 @@
 				F3498FDD21B9346D006E0217 /* AppDelegate.swift */,
 				F3498FEF21B93829006E0217 /* MainViewController.swift */,
 				F3498FDF21B9346D006E0217 /* ViewController.swift */,
+				F3AEAB4921BBFC2400CEC711 /* CircleStyleImageView.swift */,
 				F3498FE121B9346D006E0217 /* Main.storyboard */,
 				F3498FE421B9346F006E0217 /* Assets.xcassets */,
 				F3498FE621B9346F006E0217 /* LaunchScreen.storyboard */,
 				F3498FE921B9346F006E0217 /* Info.plist */,
+				F3E114D421B94A6400B2550F /* UIView+.swift */,
+				F3E114CF21B949EB00B2550F /* la_muse.mlmodel */,
+				F3E114CD21B949EA00B2550F /* rain_princess.mlmodel */,
+				F3E114CC21B949EA00B2550F /* udnie.mlmodel */,
+				F3E114CE21B949EB00B2550F /* wave.mlmodel */,
 			);
 			path = AdjustMLImage;
 			sourceTree = "<group>";
@@ -236,8 +254,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3498FF021B93829006E0217 /* MainViewController.swift in Sources */,
+				F3AEAB4A21BBFC2400CEC711 /* CircleStyleImageView.swift in Sources */,
 				F3498FE021B9346D006E0217 /* ViewController.swift in Sources */,
+				F3E114D321B949EB00B2550F /* la_muse.mlmodel in Sources */,
+				F3E114D121B949EB00B2550F /* rain_princess.mlmodel in Sources */,
+				F3E114D521B94A6400B2550F /* UIView+.swift in Sources */,
+				F3E114D021B949EB00B2550F /* udnie.mlmodel in Sources */,
 				F3498FDE21B9346D006E0217 /* AppDelegate.swift in Sources */,
+				F3E114D221B949EB00B2550F /* wave.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
