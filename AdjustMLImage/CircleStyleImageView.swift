@@ -29,12 +29,10 @@ class CircleStyleImageView: UIImageView {
 	let circleSize: CGFloat = 8
 	func adjustCircleStyle() {
 		guard let image = self.image else { return }
-		print(self.frame)
 		let horizontalCount = floor(self.frame.width / circleSize)
 		let verticalCount = floor(self.frame.height / circleSize)
 		for horI in 0..<Int(horizontalCount) {
 			for verI in 0..<Int(verticalCount) {
-//				print("x:", horI, "y:", verI)
 
 				let circleLayer = CALayer()
 				circleLayer.cornerRadius = circleSize / 2
@@ -77,31 +75,3 @@ extension UIImage {
 	}
 
 }
-
-//	func getPixelColor(_ point: CGPoint) -> UIColor {
-//		guard let image = UIImage(named: "testImg") else { return .clear }
-//		let cgImage : CGImage = image.cgImage!
-//		guard let pixelData = CGDataProvider(data: (cgImage.dataProvider?.data)!)?.data else {
-//			return UIColor.clear
-//		}
-//		let data = CFDataGetBytePtr(pixelData)!
-//		let posX = Int(point.x)
-//		let posY = Int(point.y)
-//		let index = Int(image.size.width) * posY + posX
-//		let expectedLengthA = Int(image.size.width * image.size.height)
-//		let expectedLengthRGB = 3 * expectedLengthA
-//		let expectedLengthRGBA = 4 * expectedLengthA
-//		let numBytes = CFDataGetLength(pixelData)
-//		switch numBytes {
-//		case expectedLengthA:
-//			return UIColor(red: 0, green: 0, blue: 0, alpha: CGFloat(data[index])/255.0)
-//		case expectedLengthRGB:
-//			return UIColor(red: CGFloat(data[3*index])/255.0, green: CGFloat(data[3*index+1])/255.0, blue: CGFloat(data[3*index+2])/255.0, alpha: 1.0)
-//		case expectedLengthRGBA:
-//			return UIColor(red: CGFloat(data[4*index])/255.0, green: CGFloat(data[4*index+1])/255.0, blue: CGFloat(data[4*index+2])/255.0, alpha: CGFloat(data[4*index+3])/255.0)
-//		default:
-//			// unsupported format
-//			return UIColor.clear
-//		}
-//	}
-//}

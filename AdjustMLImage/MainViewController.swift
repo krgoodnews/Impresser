@@ -23,12 +23,12 @@ class MainViewController: UIViewController {
 
 	let originalImgView = UIImageView().then {
 		$0.contentMode = .scaleAspectFit
-		$0.image = UIImage(named: "testImg")
+		$0.image = UIImage(named: "testImg01")
 	}
 
 	let imgView = CircleStyleImageView().then {
 		$0.contentMode = .scaleAspectFit
-		$0.image = UIImage(named: "testImg")
+		$0.image = UIImage(named: "testImg01")
 	}
 
 	let compressorCV = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()).then {
@@ -39,7 +39,6 @@ class MainViewController: UIViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		print("viewDidAppear")
 		imgView.adjustCircleStyle()
 	}
 	private func setupViews() {
@@ -53,7 +52,7 @@ class MainViewController: UIViewController {
 
 	private func setupLayout() {
 		originalImgView.snp.makeConstraints {
-			$0.top.equalTo(view.safeAreaLayoutGuide)
+			$0.top.equalTo(view.safeAreaLayoutGuide).offset(24)
 			$0.centerX.equalToSuperview()
 			$0.size.equalTo(CGSize(width: 320, height: 213))
 		}
